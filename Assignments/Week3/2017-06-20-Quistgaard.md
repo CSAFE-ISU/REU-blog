@@ -1,6 +1,6 @@
 ---
 title: "Ethics of Reproducible Research"
-subtitle: "Firstname Lastname"
+subtitle: "Maddie Quistgaard"
 date: "2017-06-20 12:00:00 CDT"
 topic: "week3"
 layout: post
