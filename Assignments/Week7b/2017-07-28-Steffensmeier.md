@@ -1,6 +1,6 @@
 ---
 title: "Statistical Approaches to Matching Bullets"
-subtitle: "Firstname Lastname"
+subtitle: "Anna Steffensmeier"
 date: "2017-07-28 17:00:00 CDT"
 topic: "week7"
 layout: post
@@ -8,29 +8,19 @@ root: ../../../
 tags: [forensics, statistics, assignments]
 ---
  
-## Background:
-
-Watch the entire CSAFE webinar (including questions at the end) posted [here](http://forensicstats.org/portfolio-posts/statistical-and-algorithmic-approaches-to-matching-bullets/). (The actual presentation starts about 7 minutes in.) While you are watching, keep in mind the following questions to respond to when you're finished:
 
 1. What data do Hare *et al* use? 
+
+Hare *et al* used the x3p file, bullet R-package, and the random forest package. The 3-D scanned images of the bullets from the Hamby study were used as the foundation of their data, which they then analyzed later.
+
 2. In what ways do the methods used by Hare *et al* differ from the "traditional" methods of bullet matching? 
+
+The traditional methods that have been used in the past involve firearm examiners using a comparison microscope to establish whether or not two bullets are a match or not a match. Their decision is not statistically based, however. Instead, they base their decision off of how many successively matching striae are on the two bullets in question (it is typically about six matching striae). Hare *et al* take several components into consideration when comparing two bullets to each other. One thing that separates the methods Hare *et al* use  is their creation of digital images to assist with their comparisons.
+
 3. How do Hare *et al* use **clustering** to help perform bullet matching tasks? 
+
+Clustering is not explicitly mentioned as a method they use to match two bullets. However, they use some similar methods to separate bullets as matches or nonmatches based on certain elements with the help of the Random Forest package. The bullets that have similar characteristics would be separted into the "matches" category while the bullets who have different characteristics would be categorized as "nonmatches".
+
 4. Identify one statistics and/or probability concept in the presentation that you have not heard of before. Do a little bit of research (Googling/Wikipedia is ok) and try to describe it to someone who doesn't know about it. You should also consult [this paper](bulletmatchingpaper.pdf) to see if there is more detail on your chosen topic than is presented in the webinar. (Hint: Control + F is useful...) You **don't need** to read the whole paper.
 
-Respond to all of these questions in a blog post. Remember, length of response is not as important as how well and how clearly you communicate your well-formed thoughts in the response. Please avoid run-on sentences. The format of the response is up to you: try to put your personal twist on it! This is the last assignment we have for you. Make it your best one yet!
-
-## Instructions (Read carefully, please!!):
-
-Before beginning the new assignment, [update your fork](https://github.com/CSAFE-ISU/REU-blog/blob/master/update_instructions/Update_instructions.md), and pull those changes to your fork down to your computer through RStudio. 
-
-Save a **copy** of this file (in RStudio), replacing "Lastname" in the filename with your own and **leave the original unedited**.
-
-In **your copy**, replace the `title:` and `subtitle:` fields in the YAML above (put your name in the `subtitle` field), while leaving the remaining fields intact. Remove the background and the instructions sections and write your blog post! 
-
-Once you are done, **create a pull request** to upload your changes to the original repository!
-
-**Note**: The date above is the due date and time. Don't edit this field! 
-
-#### Extra, extra!  
-
-Sam and Joe will reject your pull request if it does not comport with the instructions above! 
+The concept of Euclidean distance with bullet matching is an idea I have never thought of before. While I use the idea of Euclidean distance in math (more often than I'd like to), I have never heard of it applied to a real life situation. Forensic scientists use a specific equation to calculate the average diffeerence between two aligned signatures on a bullet (called Euclidean distance). A numerical value is assigned to test the probability that these lands came from bullets fired from the same gun. 
